@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/lt_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rt_english"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top">
+
+            <ImageView
+                android:id="@+id/iv_english"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/tv_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_english"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="ENGLISH"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vw_english_hindi_separator"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rt_hindi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top">
+
+            <ImageView
+                android:id="@+id/iv_hindi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/tv_hindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_hindi"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="HINDI"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vw_row_one_end"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/view_bg"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5" />
+
+    <LinearLayout
+        android:id="@+id/lt_row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:id="@+id/rt_tamil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_tamil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/tv_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_tamil"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="TAMIL"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vw_tamil_telugu_separator"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rt_telugu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_telugu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/tv_telugu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_telugu"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="TELUGU"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id='@+id/vw_row_two_end'
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/view_bg"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5" />
+
+    <LinearLayout
+        android:id="@+id/lt_row_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rt_kannada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_kannada"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/tv_kannada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_kannada"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="KANNADA"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vw_kannada_malayalam_separator"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rt_malayalam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_malayalam"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tv_malayalam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_malayalam"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="MALAYALAM"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
